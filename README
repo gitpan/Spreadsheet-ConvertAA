@@ -13,7 +13,7 @@ The limit is 'ZZZZ' or 475255.
 
 New in this version:
 
-	CHANGED: '@' is also accepted
+	FIXED: wrong handling of lower case characters thanks to Steven Dwyer
 
 INSTALLATION
 

@@ -16,7 +16,7 @@ our %EXPORT_TAGS = ( 'all' => [ qw() ] );
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw( FromAA ToAA);
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 #----------------------------------------------------
 
@@ -34,7 +34,7 @@ confess "BaseAA '$baseAA' is too big" if(length($baseAA) > 4) ;
 
 for (split //, (reverse $baseAA))
 	{
-	$base10 += ((uc(ord($_)) - ord('A')) + 1) * $AA_divider[$AA_bit] ;
+	$base10 += ((ord(uc($_)) - ord('A')) + 1) * $AA_divider[$AA_bit] ;
 	$AA_bit++ ;
 	}
 

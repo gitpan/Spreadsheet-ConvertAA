@@ -4,3 +4,5 @@ Revision history for Perl extension Spreadsheet::ConvertAA.
 	- original version; created by h2xs 1.21 with options
 		-X -n Spreadsheet::ConvertAA
 
+0.02  Sat Jan  24 16:00:00 2004
+	CHANGED: '@' is also accepted

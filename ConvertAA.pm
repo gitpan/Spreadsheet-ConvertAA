@@ -16,7 +16,7 @@ our %EXPORT_TAGS = ( 'all' => [ qw() ] );
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw( FromAA ToAA);
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 #----------------------------------------------------
 
@@ -29,7 +29,7 @@ sub FromAA
 my $baseAA = shift ;
 my ($AA_bit, $base10) = (0, 0) ;
 
-confess "Invalid baseAA '$baseAA'" if($baseAA =~ /[^A-Za-z]/) ;
+confess "Invalid baseAA '$baseAA'" if($baseAA =~ /[^A-Za-z@]/) ;
 confess "BaseAA '$baseAA' is too big" if(length($baseAA) > 4) ;
 
 for (split //, (reverse $baseAA))

@@ -1,4 +1,4 @@
-Spreadsheet/ConvertAA version 0.01
+Spreadsheet/ConvertAA version 0.02
 ==================================
 
 This module allows you to convert from Spreadsheet column notation ( 'A', 'AZ', 'BC', ..) to decimal and back.
@@ -10,6 +10,10 @@ Base AA (the name I give to the column notation) doesn't have the 'zero' notion.
 and faster way to do the convertion.
 
 The limit is 'ZZZZ' or 475255.
+
+New in this version:
+
+	CHANGED: '@' is also accepted
 
 INSTALLATION
 

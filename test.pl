@@ -4,11 +4,17 @@
 #########################
 
 use Test;
-BEGIN { plan tests => 1 };
+BEGIN { plan tests => 3 };
 use Spreadsheet::ConvertAA;
 
 # Insert your test code below, the Test module is use()ed here so read
 # its man page ( perldoc Test ) for help writing this test script.
+
+die "Can't convert 0 to baseAA\n" unless '@' eq ToAA(0) ;
+ok(1);
+
+die "Can't convert '@' from baseAA\n" unless 0 == FromAA('@') ;
+ok(2);
 
 print "This can take few minutes! (1 mn on my linux PIII/700Mhz).\n" ;
 my ($p4, $p3, $p2, $p1) = ('@', '@', '@', 'A') ;
@@ -51,4 +57,4 @@ for my $base10 (1 .. 475_254)
 		}
 	}
 	
-ok(1);
+ok(3);

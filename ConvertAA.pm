@@ -13,7 +13,7 @@ our @ISA = qw(Exporter);
 our %EXPORT_TAGS = ( 'all' => [ qw() ] );
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw( FromAA ToAA);
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 
 #----------------------------------------------------
